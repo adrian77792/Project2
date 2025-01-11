@@ -22,6 +22,35 @@ header img {
 }
 
 div#carouselExampleIndicators {
-    width: 50%;
+    width: 25%;
 }
-
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+.navbar a:hover {
+    background-color: #575757;
+}
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+.text-content {
+    max-width: 45%; 
+}
