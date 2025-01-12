@@ -40,10 +40,6 @@ div#carouselExampleIndicators {
 .navbar a:hover {
     background-color: #575757;
 }
-.navbar .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
 .container {
     display: flex;
     align-items: center;
@@ -53,4 +49,25 @@ div#carouselExampleIndicators {
 }
 .text-content {
     max-width: 45%; 
+}
+.navbar-menu a:hover {
+    color: #007bff;
+}
+.navbar-text {
+    color: white;
+    float: left;
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+.navbar-left {
+    color: white;
+    margin-left: 25px; 
+    white-space: nowrap; 
+}
+.navbar-menu {
+    display: flex;
+    gap: 15px;
+    margin-left: auto; 
 }
