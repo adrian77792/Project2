@@ -22,7 +22,7 @@ header img {
 }
 
 div#carouselExampleIndicators {
-    width: 25%;
+    width: 35%;
 }
 .navbar {
     background-color: #333;
@@ -53,21 +53,62 @@ div#carouselExampleIndicators {
 .navbar-menu a:hover {
     color: #007bff;
 }
+.navbar {
+    padding: 0.5rem 1rem; /* Ustaw odpowiednie odstępy */
+}
+
+.navbar-brand {
+    padding: 0; /* Usunięcie dodatkowego paddingu */
+    margin-left: 0; /* Przesunięcie logo maksymalnie w lewo */
+}
+
 .navbar-text {
-    color: white;
-    float: left;
+    margin-left: 5px; /* Odstęp pomiędzy logo a tekstem */
 }
-.navbar .logo {
-    display: flex;
-    align-items: center;
+
+.navbar-nav .nav-link {
+    color: white; /* Zmiana koloru tekstu na biały */
 }
-.navbar-left {
-    color: white;
-    margin-left: 25px; 
-    white-space: nowrap; 
+
+.navbar-nav .nav-link:hover {
+    color: #cccccc; /* Kolor na hover */
 }
-.navbar-menu {
-    display: flex;
-    gap: 15px;
-    margin-left: auto; 
+
+@media (max-width: 768px) {
+    .navbar-text {
+        display: none; /* Ukrycie tekstu na małych ekranach */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Wyświetlanie menu linijka po linijce */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 0.5rem; /* Dodanie odstępów pomiędzy elementami */
+    }
+    #MYJOBS {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        order: 1;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #carouselExampleIndicators {
+        order: 2;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .carousel-inner img {
+        height: auto;
+        width: 100%;
+    }
+    div#carouselExampleIndicators {
+        width: 50%;
+    }
 }
