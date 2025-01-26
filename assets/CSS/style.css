@@ -112,3 +112,35 @@ div#carouselExampleIndicators {
         width: 50%;
     }
 }
+.scrolling-tags {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: #f8f9fa;
+    padding: 10px 0;
+  }
+
+  .scrolling-tags .tags-wrapper {
+    display: inline-block;
+    animation: scroll-tags 60s linear infinite;
+  }
+
+  .scrolling-tags .tag-item {
+    display: inline-block;
+    margin: 0 30px;
+    padding: 5px 15px;
+    background-color: #6b6e72;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  @keyframes scroll-tags {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
