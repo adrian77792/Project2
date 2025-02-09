@@ -73,7 +73,19 @@ div#carouselExampleIndicators {
 .navbar-nav .nav-link:hover {
     color: #cccccc; 
 }
-
+@media (max-width: 615px) {
+    .navbar-text {
+        display: none;
+    }
+    .w-60 {
+        width: 100%;
+    }
+    #contact-form {
+        width:100%;
+        min-width: 100%;
+        padding: none;
+        }
+}
 @media (max-width: 768px) {
     .navbar-text {
     }
@@ -89,6 +101,8 @@ div#carouselExampleIndicators {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        height: 70%;
     }
 
     .text-content {
@@ -110,18 +124,22 @@ div#carouselExampleIndicators {
     div#carouselExampleIndicators {
         width: 50%;
     }
+    #contact-form {
+        width:100%;
+        min-width: 70%;
+        }
 }
 .scrolling-tags {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
     background: #f8f9fa;
-    padding: 10px 0;
+    padding: 30px 0;
   }
 
   .scrolling-tags .tags-wrapper {
     display: inline-block;
-    animation: scroll-tags 60s linear infinite;
+    animation: scroll-tags 20s linear infinite;
   }
 
   .scrolling-tags .tag-item {
@@ -152,4 +170,20 @@ img {
 .baner{
     padding-top: 3%;
     padding-bottom: 1.5%;
+}
+#contact-form {
+width:40%;
+}
+.red{
+    color:red
+}
+.black {
+    color: black;
+}
+.content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
 }
