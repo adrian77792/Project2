@@ -53,9 +53,7 @@ div#carouselExampleIndicators {
     max-width: 45%; 
     color: #746e6e;
 }
-.navbar-menu a:hover {
-    color: #007bff;
-}
+
 .navbar {
     padding: 0.5rem 1rem; 
 }
@@ -70,7 +68,9 @@ div#carouselExampleIndicators {
 }
 
 .navbar-nav .nav-link {
-    color: rgb(255, 0, 0); 
+    color: rgb(255, 0, 0);
+    border-radius: 50px;
+    font-weight: bold; 
 }
 
 .navbar-nav .nav-link:hover {
@@ -176,6 +176,7 @@ img {
 }
 #contact-form {
 width:40%;
+height: 95%;
 }
 .red{
     color:red
