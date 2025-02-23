@@ -18,8 +18,8 @@ header img {
 .carousel {
     margin: 20px auto;
     border-radius: 10px;
-    background-color: #575757;
-    padding: 10px;
+    background-color: #746e6e;
+    padding: 5px;
 }
 
 div#carouselExampleIndicators {
@@ -51,6 +51,7 @@ div#carouselExampleIndicators {
 }
 .text-content {
     max-width: 45%; 
+    color: #746e6e;
 }
 .navbar-menu a:hover {
     color: #007bff;
