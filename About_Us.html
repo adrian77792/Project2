@@ -6,7 +6,7 @@
     <title>Marek Strzelbicki - Renovations and Interior Finishing</title>
 	<meta name="description" content="I offer services quickly and affordably. I create customized websites, applications, and software solutions. From design to deployment, I bring your ideas to life.">
 	<meta name="keywords" content="Renovations, Interior Finishing, Software Solutions, Web Applications, Website Development, Mobile Applications, Full-Stack Development, Front-End, Back-End, UI/UX Design, Digital Transformation, SaaS, Cloud, E-commerce, Enterprise Software, Agile Development">
-	<link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="assets/CSS/style.css">
@@ -60,9 +60,9 @@
             <div class="mb-3 text-start"></div>
         </div>
     </div>
-        <div class="d-flex align-items-stretch">
+        <div class="container d-flex align-items-stretch">
             <!-- Lewa kolumna - dane kontaktowe -->
-            <div class="col-md-6 d-flex align-items-center">
+            <div class="contact col-md-6 d-flex align-items-center">
                 <div class="p-3 w-100">
                     <h4><p><strong style="color: red;">Address:</strong></p></h4>
                         <h5>Prymasa Stefana Wyszyńskiego 34A/7,<br> 62-800 Kalisz</h5>
@@ -80,7 +80,7 @@
             
     
             <!-- Prawa kolumna - mapa (większa wysokość) -->
-            <div class="col-md-6">
+            <div class="map col-md-6">
                 <div class="h-100">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.053756443502!2d18.046937476634678!3d51.750340571869685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471acff964e40061%3A0x6ecc5a27b3fd44bf!2sPrymasa%20Stefana%20Wyszyńskiego%2034A%2F7%2C%2062-800%20Kalisz%2C%20Polska!5e0!3m2!1spl!2suk!4v1739000526715!5m2!1spl!2suk" 
@@ -91,7 +91,26 @@
             </div>
         </div>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <footer id="footer" class="bg-dark text-light py-3">
+        <div class="container d-flex justify-content-between align-items-center h-100">
+            <!-- Tekst stopki (lewa strona) -->
+            <p id="footer-text" class="mb-0">&copy; <span id="year"></span> MarexLux. Wszelkie prawa zastrzeżone.</p>
+    
+            <!-- Ikony (prawa strona) -->
+            <div class="footer-icons text-end">
+                <a class="hidden-link" target="_blank" href="https://www.facebook.com/profile.php?id=100083205698879">
+                    <img class="footer-icon mx-2" src="assets/icons/social.png" alt="Facebook">
+                </a>
+                <a class="hidden-link" target="_blank" href="mailto:Marexlux@op.pl">
+                    <img class="footer-icon mx-2" src="assets/icons/message.png" alt="Message">
+                </a>
+                <a class="hidden-link" target="_blank" href="tel:+48785384981">
+                    <img class="footer-icon mx-2" src="assets/icons/phone.png" alt="Phone">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+    
 </body>
 </html>

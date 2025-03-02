@@ -6,7 +6,7 @@
     <title>Marek Strzelbicki - Renovations and Interior Finishing</title>
 	<meta name="description" content="I offer services quickly and affordably. I create customized websites, applications, and software solutions. From design to deployment, I bring your ideas to life.">
 	<meta name="keywords" content="Renovations, Interior Finishing, Software Solutions, Web Applications, Website Development, Mobile Applications, Full-Stack Development, Front-End, Back-End, UI/UX Design, Digital Transformation, SaaS, Cloud, E-commerce, Enterprise Software, Agile Development">
-	<link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="assets/CSS/style.css">
@@ -52,11 +52,14 @@
     </div>
 </nav>
     </header>
+    <div class="header-placeholder">
+        
+    </div>
 
     <div class="d-flex justify-content-center">
         <div class="md-8 text-center">
             <h1 class="baner black">
-                <span></span> <b class="red">"Spectacular</b></span> <b class="black">Transformations"</b></h1></span>
+                <span></span> <b class="red">Spectacular</b></span> <b class="black">Transformations</b></span>
             </h1> 
             <h6><p>Check out the difference our renovation services can make! 
                 <br><b class="red">Use the slider to see the transformation - before and after.</b>
@@ -68,14 +71,15 @@
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        .container {
+        .container-services {
             position: relative;
-            width: 400px;
-            height: 400px;
+            width: 450px;
+            height: 600px;
             overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
+            
         }
         .image-wrapper {
             position: absolute;
@@ -125,13 +129,13 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container container-services">
         <div class="image-wrapper">
-            <img src="after_before/456486261_488394870610699_8569323153907087207_n.jpg" alt="Po remoncie">
+            <img src="assets/after_before/Construction1.jpg" alt="Before">
             <div class="caption after-caption">Before</div>
         </div>
         <div class="image-wrapper before">
-            <img src="after_before/456588922_488394917277361_3293500653591676058_n.jpg" alt="Przed remontem">
+            <img src="assets/after_before/Construction01.jpg" alt="After">
             <div class="caption before-caption">After</div>
         </div>
         <div class="slider" id="slider"></div>
@@ -141,10 +145,12 @@
         const slider = document.getElementById('slider');
         const before = document.querySelector('.before');
         const container = document.querySelector('.container');
-        
+        let autoMove;
+        let isUserInteracting = false;
         function setInitialState() {
-            before.style.clipPath = 'inset(0 50% 0 0)';
-            slider.style.left = '50%';
+            before.style.clipPath = 'inset(0 100% 0 0)';
+            slider.style.left = '0%';
+            startAutoMove();
         }
         
         slider.addEventListener('mousedown', (e) => {
@@ -158,15 +164,47 @@
         function moveSlider(e) {
             let rect = container.getBoundingClientRect();
             let pos = (e.clientX - rect.left) / rect.width * 100;
-            if (pos < 20) pos = 20;
-            if (pos > 80) pos = 80;
+            if (pos < 0) pos = 0;
+            if (pos > 99) pos = 99;
             before.style.clipPath = `inset(0 ${100 - pos}% 0 0)`;
             slider.style.left = pos + '%';
         }
-        
+        // Automatyczne przesuwanie
+        function startAutoMove() {
+            clearInterval(autoMove);
+            autoMove = setInterval(() => {
+                if (!isUserInteracting) {
+                    let currentPos = parseFloat(slider.style.left) || 0;
+                    let newPos = currentPos + 0.1; // Przesuwamy o 2% na sekundę
+                    if (newPos > 99) newPos = 0; // Reset do początku
+                    before.style.clipPath = `inset(0 ${100 - newPos}% 0 0)`;
+                    slider.style.left = newPos + '%';
+        }
+    }, 10);
+}
         setInitialState();
     </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <div class="header-placeholder"></div>
+    <footer id="footer" class="bg-dark text-light py-3">
+        <div class="container d-flex justify-content-between align-items-center h-100">
+            <!-- Tekst stopki (lewa strona) -->
+            <p id="footer-text" class="mb-0">&copy; <span id="year"></span> MarexLux. Wszelkie prawa zastrzeżone.</p>
+    
+            <!-- Ikony (prawa strona) -->
+            <div class="footer-icons text-end">
+                <a class="hidden-link" target="_blank" href="https://www.facebook.com/profile.php?id=100083205698879">
+                    <img class="footer-icon mx-2" src="assets/icons/social.png" alt="Facebook">
+                </a>
+                <a class="hidden-link" target="_blank" href="mailto:Marexlux@op.pl">
+                    <img class="footer-icon mx-2" src="assets/icons/message.png" alt="Message">
+                </a>
+                <a class="hidden-link" target="_blank" href="tel:+48785384981">
+                    <img class="footer-icon mx-2" src="assets/icons/phone.png" alt="Phone">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+
 </body>
 </html>

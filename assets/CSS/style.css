@@ -25,6 +25,14 @@ header img {
 div#carouselExampleIndicators {
     width: 35%;
 }
+header {
+    position:fixed;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+    }
 .navbar {
     background-color: #333;
     overflow: hidden;
@@ -39,7 +47,7 @@ div#carouselExampleIndicators {
     padding: 14px 20px;
 }
 .navbar a:hover {
-    background-color: #ffffff;
+    background-color: #ff0000;
 }
 .container {
     display: flex;
@@ -49,6 +57,7 @@ div#carouselExampleIndicators {
     padding: 20px;
     padding: #ff0000;
 }
+
 .text-content {
     max-width: 45%; 
     color: #746e6e;
@@ -68,7 +77,7 @@ div#carouselExampleIndicators {
 }
 
 .navbar-nav .nav-link {
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     border-radius: 50px;
     font-weight: bold; 
 }
@@ -90,7 +99,14 @@ div#carouselExampleIndicators {
         }
 }
 @media (max-width: 768px) {
-    .navbar-text {
+    #footer-text {
+        display: none;
+    }
+
+    .footer-icons {
+        width: 100%; 
+        display: flex;
+        justify-content: center; 
     }
 
     .navbar-nav {
@@ -190,4 +206,79 @@ height: 95%;
     align-items: center;
     justify-content: center;
     min-height: 70vh;
+}
+.footer-icon{
+    width: 5vh;
+}
+
+#footer-text {
+    white-space: nowrap; /* Zapobiega zawijaniu tekstu */
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10vh; /* 8% wysokości ekranu */
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.header-placeholder {
+    height: 7.5vh;
+}
+
+@keyframes shine {
+    0% { background-position: -300px 0; }
+    100% { background-position: 300px 0; }
+}
+
+.shiny-text-red {
+    position: relative;
+    background: linear-gradient(45deg, transparent, rgba(255, 0, 0, 1), transparent);
+    background-size: 100px 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 20s infinite linear; /* Animacja przesuwa się wolniej */
+}
+
+.shiny-text-black {
+    position: relative;
+    background: linear-gradient(45deg, transparent, rgba(0,0,0,1), transparent);
+    background-size: 100px 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 20s infinite linear; /* Animacja przesuwa się wolniej */
+}
+
+.hidden-link {
+    text-decoration: none; 
+    color: inherit; 
+    border: none; 
+    background: none; 
+    outline: none; 
+}
+
+@media (min-width: 768px) { 
+    .container {
+        flex-direction: row;
+    }
+
+    .map {
+        order: 2; 
+        width: 50%;
+    }
+
+    .contact {
+        order: 1; 
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) { 
+    .container {
+        flex-direction: column-reverse; 
+    }
 }
