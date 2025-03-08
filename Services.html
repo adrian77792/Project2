@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -69,64 +70,7 @@
         </div>
     </div>
 
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        .container-services {
-            position: relative;
-            width: 450px;
-            height: 600px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        .image-wrapper {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .image-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-        }
-        .before {
-            clip-path: inset(0 0 0 0);
-             z-index: 1;
-        }
-        .slider {
-            position: absolute;
-            top: 0;
-            left: 100%;
-            width: 5px;
-            height: 100%;
-            background-color: red;
-            cursor: ew-resize;
-            z-index: 2;
-        }
-
-        .caption {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 5px 10px;
-            font-size: 16px;
-            border-radius: 5px;
-        }
-        .caption.before-caption {
-            left: 25%;
-        }
-        .caption.after-caption {
-            left: 75%;
-        }
-    </style>
+    
 </head>
 <body>
     <div class="container container-services">

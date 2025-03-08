@@ -39,7 +39,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0.5rem 1rem;
 }
 .navbar a {
     color: white;
@@ -61,10 +61,6 @@ header {
 .text-content {
     max-width: 45%; 
     color: #746e6e;
-}
-
-.navbar {
-    padding: 0.5rem 1rem; 
 }
 
 .navbar-brand {
@@ -97,6 +93,12 @@ header {
         min-width: 100%;
         padding: none;
         }
+    .footer-icons {
+        width: 100%; 
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
 }
 @media (max-width: 768px) {
     #footer-text {
@@ -106,7 +108,8 @@ header {
     .footer-icons {
         width: 100%; 
         display: flex;
-        justify-content: center; 
+        justify-content: center;
+        align-items:center; 
     }
 
     .navbar-nav {
@@ -208,7 +211,7 @@ height: 95%;
     min-height: 70vh;
 }
 .footer-icon{
-    width: 5vh;
+    height: 5vh;
 }
 
 #footer-text {
@@ -219,7 +222,7 @@ height: 95%;
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 10vh; /* 8% wysokości ekranu */
+    height: 7.5vh; /* 8% wysokości ekranu */
     overflow: hidden;
     z-index: 1000;
 }
@@ -275,10 +278,62 @@ height: 95%;
         order: 1; 
         width: 50%;
     }
+    
 }
 
-@media (max-width: 767px) { 
-    .container {
-        flex-direction: column-reverse; 
-    }
+.container-services {
+    position: relative;
+    width: 20vw;
+    min-width: 300px;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.before {
+    clip-path: inset(0 0 0 0);
+        z-index: 1;
+}
+.slider {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 5px;
+    height: 100%;
+    background-color: red;
+    cursor: ew-resize;
+    z-index: 2;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.caption.before-caption {
+    left: 25%;
+}
+.caption.after-caption {
+    left: 75%;
 }
