@@ -72,18 +72,27 @@
 
     
 </head>
-<body>
-    <div class="container container-services">
-        <div class="image-wrapper">
-            <img src="assets/after_before/Construction1.jpg" alt="Before">
-            <div class="caption after-caption">Before</div>
+        <div class="container container-services position-relative">
+            <!-- Lewy przycisk -->
+            <button id="prevBtn" class="btn btn-dark position-absolute" style="left: -50px; top: 50%; transform: translateY(-50%);">
+                <img src="assets/icons/left.png" alt="Previous" width="20">
+            </button>
+            
+            <div class="image-wrapper">
+                <img id="beforeImage" src="assets/after_before/Construction1.jpg" alt="Before">
+                <div class="caption after-caption">Before</div>
+            </div>
+            <div class="image-wrapper before">
+                <img id="afterImage" src="assets/after_before/Construction01.jpg" alt="After">
+                <div class="caption before-caption">After</div>
+            </div>
+            <div class="slider" id="slider"></div>
+            
+            <!-- Prawy przycisk -->
+            <button id="nextBtn" class="btn btn-dark position-absolute" style="right: -50px; top: 50%; transform: translateY(-50%);">
+                <img src="assets/icons/right.png" alt="Next" width="20">
+            </button>
         </div>
-        <div class="image-wrapper before">
-            <img src="assets/after_before/Construction01.jpg" alt="After">
-            <div class="caption before-caption">After</div>
-        </div>
-        <div class="slider" id="slider"></div>
-    </div>
 
     <script>
         const slider = document.getElementById('slider');
@@ -91,20 +100,23 @@
         const container = document.querySelector('.container');
         let autoMove;
         let isUserInteracting = false;
+
         function setInitialState() {
             before.style.clipPath = 'inset(0 100% 0 0)';
             slider.style.left = '0%';
             startAutoMove();
         }
-        
+
         slider.addEventListener('mousedown', (e) => {
             e.preventDefault();
+            isUserInteracting = true;
             document.addEventListener('mousemove', moveSlider);
             document.addEventListener('mouseup', () => {
+                isUserInteracting = false;
                 document.removeEventListener('mousemove', moveSlider);
             });
         });
-        
+
         function moveSlider(e) {
             let rect = container.getBoundingClientRect();
             let pos = (e.clientX - rect.left) / rect.width * 100;
@@ -113,20 +125,33 @@
             before.style.clipPath = `inset(0 ${100 - pos}% 0 0)`;
             slider.style.left = pos + '%';
         }
+
         // Automatyczne przesuwanie
         function startAutoMove() {
             clearInterval(autoMove);
             autoMove = setInterval(() => {
                 if (!isUserInteracting) {
                     let currentPos = parseFloat(slider.style.left) || 0;
-                    let newPos = currentPos + 0.1; // Przesuwamy o 2% na sekundę
+                    let newPos = currentPos + 0.1; // Przesuwamy o 0.1% co iterację
                     if (newPos > 99) newPos = 0; // Reset do początku
                     before.style.clipPath = `inset(0 ${100 - newPos}% 0 0)`;
                     slider.style.left = newPos + '%';
+                }
+            }, 5);
         }
-    }, 10);
-}
+
+        // Wstrzymywanie przewijania po najechaniu myszką
+        container.addEventListener('mouseenter', () => {
+            clearInterval(autoMove);
+        });
+
+        // Wznawianie przewijania po opuszczeniu myszką
+        container.addEventListener('mouseleave', () => {
+            startAutoMove();
+        });
+
         setInitialState();
+
     </script>
     <div class="header-placeholder"></div>
     <footer id="footer" class="bg-dark text-light py-3">

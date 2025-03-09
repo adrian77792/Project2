@@ -238,7 +238,7 @@ height: 95%;
 
 .shiny-text-red {
     position: relative;
-    background: linear-gradient(45deg, transparent, rgba(255, 0, 0, 1), transparent);
+    background: linear-gradient(45deg, #FFD700 , rgba(255, 0, 0, 1), transparent);
     background-size: 100px 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -248,7 +248,7 @@ height: 95%;
 
 .shiny-text-black {
     position: relative;
-    background: linear-gradient(45deg, transparent, rgba(0,0,0,1), transparent);
+    background: linear-gradient(45deg, #FFD700, rgba(0,0,0,1), transparent);
     background-size: 100px 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -332,8 +332,8 @@ height: 95%;
     border-radius: 5px;
 }
 .caption.before-caption {
-    left: 25%;
+    left: 50%;
 }
 .caption.after-caption {
-    left: 75%;
+    left: 50%;
 }
