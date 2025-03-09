@@ -337,3 +337,12 @@ height: 95%;
 .caption.after-caption {
     left: 50%;
 }
+.btn-dark {
+    z-index: 1000; 
+    opacity: 1; 
+}
+
+.container-services {
+    position: relative;
+    overflow: visible; 
+}
