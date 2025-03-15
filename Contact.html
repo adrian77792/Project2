@@ -43,6 +43,9 @@
                     <a class="nav-link" href="Services.html">Services</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="Calculator.html">Calculator</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="About_Us.html">About Us</a>
                 </li>
                 <li class="nav-item">
@@ -94,34 +97,7 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-    // Initialize EmailJS
-    emailjs.init("hvLkYvpp1sB2v6pHM");
-
-    const form = document.getElementById("contact-form");
-    const responseDiv = document.getElementById("form-response");
-
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const formData = new FormData(form);
-
-        emailjs.send("service_b949jof", "template_abt2a7c", Object.fromEntries(formData))
-            .then(function () {
-                responseDiv.textContent = "Message sent successfully!";
-                responseDiv.style.display = "block";
-                responseDiv.style.color = "green";
-                form.reset();
-            })
-            .catch(function (error) {
-                responseDiv.textContent = "Failed to send message. Please try again.";
-                responseDiv.style.display = "block";
-                responseDiv.style.color = "red";
-                console.error("EmailJS Error:", error);
-            });
-    });
-    
-</script>
+<script src="assets/scripts/contact_send_email.js"></script>
 <div class="header-placeholder"></div>
 <footer id="footer" class="bg-dark text-light py-3">
     <div class="container d-flex justify-content-between align-items-center h-100">

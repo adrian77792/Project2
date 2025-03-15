@@ -1,5 +1,4 @@
-
-            const images = [
+const images = [
     { before: "assets/after_before/Construction1.jpg", after: "assets/after_before/Construction01.jpg", table: "table1" },
     { before: "assets/after_before/Construction2.jpg", after: "assets/after_before/Construction02.jpg", table: "table2" },
     { before: "assets/after_before/Construction3.jpg", after: "assets/after_before/Construction03.jpg", table: "table3" },
