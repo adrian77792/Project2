@@ -60,34 +60,35 @@
     </header>
     <div class="header-placeholder"></div>
     <div class="content-center">
-        <h1 class="baner"><b class="shiny-text-red">Marex</b><b class="shiny-text-black">Lux</b></h1>
+        <h1><b class="shiny-text-red">Marex</b><b class="shiny-text-black">Lux</b></h1>
         <p>We specialize in comprehensive interior finishing, ensuring top-quality results.</p>
-    <h2 class="text-center">Kalkulator Budowlany</h2>
+    <h3 class="text-center">Construction <span class="red" >Calculator</span></h3>
     <div class="container">
         <table class="table table-bordered text-center">
             <thead class="table-dark">
                 <tr>
-                    <th>Usługa</th>
-                    <th>Powierzchnia (m²)</th>
-                    <th>Cena za m²</th>
-                    <th>Łączna cena</th>
-                    <th>Akcja</th>
+                    <th>Service</th>
+                    <th>Area (m²)</th>
+                    <th>Price per m²</th>
+                    <th>Total Price</th>
+                    <th>Action</th>
+
                 </tr>
             </thead>
             <tbody id="servicesTable"></tbody>
         </table>
         
     </div>
-    <button class="btn btn-primary" onclick="addRow()">Dodaj usługę</button>
-        <h3 class="mt-3">Łączna cena: <span id="totalPrice">0</span> zł</h3>
-        <button onclick="generatePDF()">Drukuj jako PDF</button>
+    <button class="btn" style="background-color: red ; color: white" onclick="addRow()">Add Service</button>
+        <h3 class="mt-3">Total Price: <span id="totalPrice">0</span> £</h3>
+        <button onclick="generatePDF()">Print as PDF</button>
     </div>
     <div class="header-placeholder"></div>
     <script src="assets/scripts/calculator.js"></script>
     <footer id="footer" class="bg-dark text-light py-3">
         <div class="container C-About_Us d-flex justify-content-between align-items-center h-100">
             <!-- Tekst stopki (lewa strona) -->
-            <p id="footer-text" class="mb-0">&copy; <span id="year"></span> MarexLux. Wszelkie prawa zastrzeżone.</p>
+            <p id="footer-text" class="mb-0">&copy; <span id="year"></span> MarexLux. All rights reserved.</p>
     
             <!-- Ikony (prawa strona) -->
             <div class="footer-icons text-end">
