@@ -12,7 +12,7 @@
             let index = 0;
             setInterval(() => {
                 index = (index + 1) % messages.length;
-                footerText.innerHTML = `&copy; ${new Date().getFullYear()} MarekLux. ${messages[index]}`;
+                footerText.innerHTML = `&copy; ${new Date().getFullYear()} MarexLux. ${messages[index]}`;
             }, 5000);
         });
 
@@ -39,12 +39,12 @@
             document.addEventListener("mousemove", function(event) {
                 // Jeśli kursor opuścił container-fluid
                 if (!isMouseOverContainerFluid(event)) {
-                    console.log("Kursor opuścił container-fluid, czekam 500ms przed zamknięciem.");
+                    //console.log("Kursor opuścił container-fluid, czekam 500ms przed zamknięciem.");
     
                     delay(500).then(function () {
                         // Jeśli kursor nadal nie jest nad container-fluid, zamknij menu
                         if (!isMouseOverContainerFluid(event)) {
-                            console.log("Zamykam menu, kursor nie jest nad container-fluid.");
+                            //console.log("Zamykam menu, kursor nie jest nad container-fluid.");
                             bsCollapse.hide(); // Zamykanie menu
                         }
                     });
