@@ -11,6 +11,7 @@ function setInitialState() {
 }
 
 slider.addEventListener('mousedown', (e) => {
+    if (e.pointerType === 'touch') return;
     e.preventDefault();
     isUserInteracting = true;
     document.addEventListener('mousemove', moveSlider);
