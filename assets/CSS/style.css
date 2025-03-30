@@ -89,9 +89,9 @@ header {
         width: 100%;
     }
     #contact-form {
-        width:100%;
+        width:100% !important;
         min-width: 100%;
-        padding: none;
+        padding: 1rem;
         }
     .footer-icons {
         width: 100%; 
@@ -151,8 +151,9 @@ header {
         width: 50%;
     }
     #contact-form {
-        width:100%;
-        min-width: 70%;
+        width:90% !important;
+        min-width: 90%;
+        padding:1rem;
         }
 }
 .scrolling-tags {
