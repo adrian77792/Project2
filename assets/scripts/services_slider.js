@@ -43,10 +43,12 @@ function startAutoMove() {
         }
     }, 5);
 }
-
+function isMobileScreen() {
+    return window.matchMedia('(max-width: 768px)').matches;
+}
 // Wstrzymywanie przewijania po najechaniu myszką
 container.addEventListener('mouseenter', () => {
-    clearInterval(autoMove);
+    if (!isMobileScreen()) clearInterval(autoMove);
 });
 
 // Wznawianie przewijania po opuszczeniu myszką
