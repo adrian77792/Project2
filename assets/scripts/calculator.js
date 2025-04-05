@@ -41,6 +41,7 @@ function addRow(service = "Painting", area = 1) {
         if (s === service) option.selected = true;
         select.appendChild(option);
     }
+    select.style.width = "100%";
     cell1.appendChild(select);
     
     const cell2 = row.insertCell(1);
@@ -49,6 +50,7 @@ function addRow(service = "Painting", area = 1) {
     input.min = "1";
     input.value = area;
     input.oninput = updateTotal;
+    input.style.width = "100%";
     cell2.appendChild(input);
     
     const cell3 = row.insertCell(2);
