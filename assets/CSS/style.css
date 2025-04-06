@@ -163,10 +163,6 @@ header {
         padding:1rem;
         }
 
-    .responsive-table thead {
-    /*display: none;*/
-    }
-
     .responsive-table, 
     .responsive-table tbody, 
     .responsive-table tr, 
@@ -200,6 +196,14 @@ header {
     font-weight: bold;
     text-align: left;
     color: #555;
+    }
+
+    .btn-dark:hover {
+        z-index: 1000; 
+        opacity: 1; 
+        background-color:transparent;
+        border-color: transparent;
+    
     }
 
 }
@@ -259,7 +263,6 @@ height: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     min-height: 70vh;
 }
 .footer-icon{
