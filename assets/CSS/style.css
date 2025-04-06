@@ -354,20 +354,36 @@ height: 95%;
 }
 
 @media (min-width: 768px) { 
-    .container {
-        flex-direction: row;
+    .container-about_us {
+        flex-direction: column;
+        display: flex;
     }
 
     .map {
-        order: 2; 
+        order: 1; 
         width: 50%;
     }
 
     .contact {
-        order: 1; 
+        order: 2; 
         width: 50%;
     }
     
+}
+
+.container-about_us {
+    flex-direction: row;
+    display: flex;
+}
+
+.map {
+    order: 2; 
+    width: 50%;
+}
+
+.contact {
+    order: 1; 
+    width: 50%;
 }
 
 .container-services {
