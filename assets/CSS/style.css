@@ -398,8 +398,8 @@ height: 95%;
 .container-services {
     position: relative;
     width: 20vw;
-    min-width: 300px;
-    height: 60vh;
+    min-width: 400px;
+    height: 450px;
     overflow: hidden;
     display: flex;
     justify-content: center;
