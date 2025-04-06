@@ -203,12 +203,12 @@ header {
     }
 
     .carousel-control-next-icon:hover {
-        background-color: transparent; 
+        background-color: transparent !important; 
         border-radius: 5px; 
         padding: 10px;
       } 
     .carousel-control-prev-icon:hover {
-        background-color: transparent; 
+        background-color: transparent !important; 
         border-radius: 5px; 
         padding: 10px;
       } 
