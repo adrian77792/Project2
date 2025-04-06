@@ -132,21 +132,17 @@ header {
         align-items: center;
         justify-content: center;
         height: 70%;
+        padding: 5px;
     }
 
     .text-content {
-        order: 1;
         width: 100%;
         text-align: center;
         padding: 0px;
         max-width: 100%;
     }
-    /*h5 {
-        font-size: 1rem;  /* Zwiększa rozmiar czcionki /;
-      }*/
 
     #carouselExampleIndicators {
-        order: 2;
         width: 100%;
         margin-top: 20px;
     }
@@ -206,7 +202,40 @@ header {
     
     }
 
+    .carousel-control-next-icon:hover {
+        background-color: transparent; 
+        border-radius: 5px; 
+        padding: 10px;
+      } 
+    .carousel-control-prev-icon:hover {
+        background-color: transparent; 
+        border-radius: 5px; 
+        padding: 10px;
+      } 
+    
+    #mobile-baner {
+        display: flex !important;
+    }
+    .desktop-baner{
+        display: none !important;
+    }
 }
+
+#mobile-baner {
+    display: none;
+    padding-bottom: 0px;
+}
+
+.carousel-control-next-icon:hover {
+    background-color: gray; 
+    border-radius: 5px; 
+    padding: 10px;
+  } 
+.carousel-control-prev-icon:hover {
+    background-color: gray; 
+    border-radius: 5px; 
+    padding: 10px;
+  } 
 .scrolling-tags {
     overflow: hidden;
     white-space: nowrap;

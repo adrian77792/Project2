@@ -1,6 +1,6 @@
 const slider = document.getElementById('slider');
 const before = document.querySelector('.before');
-const container = document.querySelector('.container');
+const container = document.querySelector('.container-services');
 let autoMove;
 let isUserInteracting = false;
 
