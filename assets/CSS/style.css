@@ -6,10 +6,6 @@ body {
     color: #333;
 }
 
-header {
-    color: #ffffff;
-    text-align: center;
-}
 
 header img {
     max-width: 100%;
@@ -26,13 +22,29 @@ div#carouselExampleIndicators {
     width: 35%;
 }
 header {
-    position:fixed;
     position: fixed;
     top: 0;
-    width: 100%;
-    overflow: hidden;
+    left: 0;
+    width: 100vw; /* Pełna szerokość okna przeglądarki */
+    height: 7.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
-    }
+    padding: 0; /* Zresetowanie wszelkich paddingów */
+    margin: 0; /* Zresetowanie marginesów */
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+}
+
+.navbar, .container {
+    padding: 0;
+    margin: 0;
+    width: 100% !important; /* Upewnienie się, że szerokość jest 100% */
+}
+    
+
 .navbar {
     background-color: #333;
     overflow: hidden;
@@ -458,4 +470,9 @@ height: 95%;
 }
 .header-padding {
     padding-top: 8px;
+}
+
+.form-label {
+    color: gray;
+    font-weight: bold;
 }

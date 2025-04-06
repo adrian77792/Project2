@@ -3,10 +3,10 @@
 
             const footerText = document.getElementById("footer-text");
             const messages = [
-                "Dziękujemy za odwiedzenie naszej strony!",
-                "Skontaktuj się z nami, jeśli masz pytania.",
-                "Śledź nasze nowości i promocje!",
-                "Zostań z nami na dłużej!",
+               "Thank you for visiting our site!",
+                "Contact us if you have any questions.",
+                "Follow our news and promotions!",
+                "Stay with us for a while!",
             ];
 
             let index = 0;
