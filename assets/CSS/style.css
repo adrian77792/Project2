@@ -141,7 +141,7 @@ header {
         align-items: center;
         justify-content: center;
         height: 70%;
-        padding: 5px;
+        padding-top: 5px;
     }
 
     .text-content {
