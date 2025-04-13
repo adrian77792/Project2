@@ -226,6 +226,10 @@ header {
     .desktop-baner{
         display: none !important;
     }
+
+    .container-services {
+        min-width: 80%;
+    }
 }
 
 #mobile-baner {
@@ -396,7 +400,7 @@ height: 95%;
 .container-services {
     position: relative;
     width: 20vw;
-    min-width: 80%;
+    min-width: 400px;
     height: 450px;
     overflow: hidden;
     display: flex;
