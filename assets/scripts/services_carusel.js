@@ -38,5 +38,10 @@ nextBtn.addEventListener("click", () => {
 // Ukryj wszystkie tabele poza pierwszą na starcie
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".comparison-table").forEach(table => table.style.display = "none");
-    document.getElementById(images[currentIndex].table).style.display = "table";
+    if (images && images[currentIndex] && images[currentIndex].table) {
+        const element = document.getElementById(images[currentIndex].table);
+        if (element) {
+            element.style.display = "table";
+        }
+    }
 });
