@@ -1,6 +1,9 @@
+ // Run after DOM is fully loaded
  document.addEventListener("DOMContentLoaded", function () {
+            // Dynamically insert the current year into the element with id="year"
             document.getElementById("year").textContent = new Date().getFullYear();
-
+            
+            // Rotating footer message logic
             const footerText = document.getElementById("footer-text");
             const messages = [
                "Thank you for visiting our site!",
@@ -10,42 +13,48 @@
             ];
 
             let index = 0;
+
+            // Every 3 seconds, update the footer message in a loop
             setInterval(() => {
                 index = (index + 1) % messages.length;
                 footerText.innerHTML = `&copy; ${new Date().getFullYear()} MarexLux. ${messages[index]}`;
-            }, 5000);
+            }, 3000);
         });
 
+        // Another DOMContentLoaded listener for navigation bar behavior
         document.addEventListener("DOMContentLoaded", function () {
             var navbarMenu = document.querySelector("#navbarMenu");
             var containerFluid = document.querySelector(".container-fluid");
     
-            // Tworzymy instancję Collapse
+            // Initialize Bootstrap Collapse component without toggling it immediately
             var bsCollapse = new bootstrap.Collapse(navbarMenu, { toggle: false });
     
-            // Funkcja do opóźnienia
+            // Utility: delay execution for a given number of milliseconds
             function delay(ms) {
                 return new Promise(function(resolve) {
                     setTimeout(resolve, ms);
                 });
             }
     
-            // Sprawdzamy, czy kursor jest nad elementem container-fluid
+             // Check if the mouse is currently hovering over the container-fluid element
             function isMouseOverContainerFluid(event) {
                 return containerFluid.contains(event.target);
             }
     
-            // Dodatkowa obsługa dla zamykania menu, gdy kursor nie jest nad container-fluid
+             /**
+             * Detects mouse movement and conditionally collapses the navbar:
+             * If the mouse leaves the container-fluid area and stays out for 500ms,
+             * the navigation menu will automatically close.
+             */
             document.addEventListener("mousemove", function(event) {
-                // Jeśli kursor opuścił container-fluid
+                
+                // Wait 500ms before checking again and potentially closing the menu
                 if (!isMouseOverContainerFluid(event)) {
-                    //console.log("Kursor opuścił container-fluid, czekam 500ms przed zamknięciem.");
-    
+                    
+                    // Wait 500ms before checking again and potentially closing the menu
                     delay(500).then(function () {
-                        // Jeśli kursor nadal nie jest nad container-fluid, zamknij menu
                         if (!isMouseOverContainerFluid(event)) {
-                            //console.log("Zamykam menu, kursor nie jest nad container-fluid.");
-                            bsCollapse.hide(); // Zamykanie menu
+                            bsCollapse.hide(); // Collapse the navbar menu
                         }
                     });
                 }
