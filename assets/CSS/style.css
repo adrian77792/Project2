@@ -1,49 +1,55 @@
+/* Base body styling for default layout and typography */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: Arial, sans-serif; /* Clean, widely supported sans-serif font */
+    margin: 0; /* Remove default browser spacing */
     padding: 0;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #ffffff; /* Neutral white background */
+    color: #333; /* Dark gray text for better readability on white */
 }
 
-
+/* Responsive logo/image in header */
 header img {
-    max-width: 100%;
+    max-width: 100%; /* Ensures image doesn't overflow container */
 }
 
+/* Styling for the image carousel */
 .carousel {
     margin: 20px auto;
-    border-radius: 10px;
-    background-color: #746e6e;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    background-color: #746e6e; /* Darker background to highlight the carousel */
     padding: 5px;
 }
 
+/* Limit carousel width to 35% on large screens */
 div#carouselExampleIndicators {
     width: 35%;
 }
+
+/* Fixed header setup */
 header {
-    position: fixed;
+    position: fixed; /* Keep header visible while scrolling */
     top: 0;
     left: 0;
-    width: 100vw; /* Pełna szerokość okna przeglądarki */
+    width: 100vw; /* Full viewport width */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
-    padding: 0; /* Zresetowanie wszelkich paddingów */
-    margin: 0; /* Zresetowanie marginesów */
+    z-index: 1000; /* Ensure header stays above other elements */
+    padding: 0; 
+    margin: 0; 
     overflow: hidden;
     color: #ffffff;
     text-align: center;
 }
 
+/* Navbar configuration */
 .navbar {
     padding: 0;
     margin: 0;
-    width: 100% !important; /* Upewnienie się, że szerokość jest 100% */
+    width: 100% !important; /* Force full width */
 }
     
-
+/* Navbar configuration */
 .navbar {
     background-color: #333;
     overflow: hidden;
@@ -51,28 +57,35 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+/* Navbar links */
 .navbar a {
     color: white;
     text-decoration: none;
-    padding: 14px 20px;
+    padding: 14px 20px; /* Clickable area padding */
 }
 .navbar a:hover {
-    background-color: #ff0000;
+    background-color: #ff0000; /* Visual feedback on hover */
 }
+
+/* Generic container for layout separation */
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
-    padding: #ff0000;
+    padding: #ff0000; /* Incorrect value, should be removed or corrected */
 }
 
+/* Text content block with max width to avoid overly wide lines */
 .text-content {
     max-width: 45%; 
     color: #746e6e;
 }
 
+
+/* Brand-specific navbar tweaks */
 .navbar-brand {
     padding: 0; 
     margin-left: 0;
@@ -81,10 +94,12 @@ header {
     padding-right: 5px !important;
 }
 
+/* Supplementary text in navbar */
 .navbar-text {
     margin-left: 5px; 
 }
 
+/* Nav links with bold and white styling */
 .navbar-nav .nav-link {
     color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -94,9 +109,11 @@ header {
 .navbar-nav .nav-link:hover {
     color: #cccccc; 
 }
+
+/* Mobile-specific styles for screens <615px */
 @media (max-width: 615px) {
     .navbar-text {
-        display: none;
+        display: none; /* Hide less critical text on small screens */
     }
     .w-60 {
         width: 100%;
@@ -113,9 +130,11 @@ header {
         align-items: center;
     }
 }
+
+/* Tablet layout adjustments */
 @media (max-width: 768px) {
     #footer-text {
-        display: none;
+        display: none; /* Hide extra footer text for clarity */
     }
 
     .services-text {
@@ -169,6 +188,7 @@ header {
         padding:1rem;
         }
 
+    /* Mobile responsive table layout */
     .responsive-table, 
     .responsive-table tbody, 
     .responsive-table tr, 
@@ -193,6 +213,7 @@ header {
     border-bottom: 1px solid #eee;
     }
 
+    /* Label for screen readers and mobile layout */
     .responsive-table td::before {
     content: attr(data-label);
     position: absolute;
@@ -204,6 +225,7 @@ header {
     color: #555;
     }
 
+    /* Style overrides for carousel button icons */
     .btn-dark:hover {
         z-index: 1000; 
         opacity: 1; 
@@ -223,6 +245,7 @@ header {
         padding: 10px;
       } 
     
+    /* Mobile banner visibility toggle */
     #mobile-baner {
         display: flex !important;
     }
@@ -240,6 +263,7 @@ header {
     padding-bottom: 0px;
 }
 
+/* Carousel controls hover styles on desktop */
 .carousel-control-next-icon:hover {
     background-color: gray; 
     border-radius: 5px; 
@@ -250,6 +274,8 @@ header {
     border-radius: 5px; 
     padding: 10px;
   } 
+
+/* Horizontal tag scroller for promotions or categories */
 .scrolling-tags {
     overflow: hidden;
     white-space: nowrap;
@@ -274,6 +300,7 @@ header {
     font-weight: 500;
   }
 
+  /* Smooth scrolling animation for tags */
   @keyframes scroll-tags {
     from {
       transform: translateX(0%);
@@ -282,63 +309,80 @@ header {
       transform: translateX(-50%);
     }
   }
+
+  /* Utility class for rounded corners */
   .rounded {
     border-radius: 0.25rem !important;
 }
+
+/* Disable image animations globally */
 img {
     animation: none;
 }
+
+/* Banner spacing */
 .baner{
     padding-top: 3%;
     padding-bottom: 1.5%;
 }
+
+/* Contact form dimensions */
 #contact-form {
 width:40%;
 height: 95%;
 }
+
+/* Text color utility classes */
 .red{
     color:red
 }
 .black {
     color: black;
 }
+
+/* Center content in vertical stack */
 .content-center {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*min-height: 70vh;*/
 }
+
+/* Footer icon sizing */
 .footer-icon{
     height: 5vh;
 }
 
+/* Prevent text wrapping */
 #footer-text {
-    white-space: nowrap; /* Zapobiega zawijaniu tekstu */
+    white-space: nowrap; 
 }
 
+/* Fixed footer positioning */
 #footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 7.5vh; /* 8% wysokości ekranu */
+    height: 7.5vh; 
     overflow: hidden;
     z-index: 1000;
     display: flex;
-    flex-direction: column; /* Zachowuje obecny układ */
-    justify-content: center; /* Wyśrodkowanie w pionie */
-    height: 50px; /* Dostosuj do swojej wysokości */
+    flex-direction: column; 
+    justify-content: center; 
+    height: 50px; 
 }
 
-
+/* Spacer to offset fixed header */
 .header-placeholder {
     height: 50px;
 }
 
+/* Shine text animation keyframes */
 @keyframes shine {
     0% { background-position: -300px 0; }
     100% { background-position: 300px 0; }
 }
 
+/* Text with animated shine effect in red theme */
 .shiny-text-red {
     position: relative;
     background: linear-gradient(45deg, #FFD700 , rgba(255, 0, 0, 1), transparent);
@@ -349,6 +393,7 @@ height: 95%;
     animation: shine 20s infinite linear; /* Animacja przesuwa się wolniej */
 }
 
+/* Text with animated shine effect in black theme */
 .shiny-text-black {
     position: relative;
     background: linear-gradient(45deg, #FFD700, rgba(0,0,0,1), transparent);
@@ -359,6 +404,7 @@ height: 95%;
     animation: shine 20s infinite linear; /* Animacja przesuwa się wolniej */
 }
 
+/* Invisible link style used for click effects or accessibility */
 .hidden-link {
     text-decoration: none; 
     color: inherit; 
@@ -367,6 +413,7 @@ height: 95%;
     outline: none; 
 }
 
+/* About section layout for large screens */
 @media (min-width: 768px) { 
     .container-about_us {
         flex-direction: column;
@@ -385,6 +432,7 @@ height: 95%;
     
 }
 
+/* Default about section layout for smaller screens */
 .container-about_us {
     flex-direction: row;
     display: flex;
@@ -400,6 +448,7 @@ height: 95%;
     width: 50%;
 }
 
+/* Image comparison slider container */
 .container-services {
     position: relative;
     width: 20vw;
@@ -427,7 +476,7 @@ height: 95%;
     position: absolute;
 }
 .before {
-    clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0); /* Reveal full "before" image */
         z-index: 1;
 }
 .slider {
@@ -441,6 +490,7 @@ height: 95%;
     z-index: 2;
 }
 
+/* Caption overlays for image comparisons */
 .caption {
     position: absolute;
     bottom: 10px;
@@ -452,12 +502,16 @@ height: 95%;
     font-size: 16px;
     border-radius: 5px;
 }
+
 .caption.before-caption {
     left: 50%;
 }
+
 .caption.after-caption {
     left: 50%;
 }
+
+/* Transparent button styling for overlays */
 .btn-dark {
     z-index: 1000; 
     opacity: 1; 
@@ -466,19 +520,24 @@ height: 95%;
 
 }
 
+/* Allow elements to be positioned outside the container */
 .container-services {
     position: relative;
     overflow: visible; 
 }
+
+/* Extra spacing for header content */
 .header-padding {
     padding-top: 8px;
 }
 
+/* Form label styling for visual hierarchy */
 .form-label {
     color:rgb(95, 88, 88);;
     font-weight: bold;
 }
 
+/* Heading and paragraph styling */
 h5 {
     color: grey;
 }
