@@ -546,3 +546,15 @@ p {
     color:grey;
 }
 
+.container-about_us .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-about_us .col-md-6 {
+    width: 50%;
+}
+
+.map iframe {
+    border-radius: 10px;
+}
