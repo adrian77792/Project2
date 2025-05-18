@@ -28,6 +28,69 @@ The website represents a modern, responsive business landing page with real-time
 - **Strengthen UI/UX Skills**  
   From smooth navigation to interactive elements, this project helps sharpen design sensibility while improving code organization and responsiveness.
 
+## Wireframe Figma
+
+🔗 **Figma:** [View my Wireframe on Figma](https://www.figma.com/design/9iFyXgR7lZ2mdYJSimZVvS/Untitled?node-id=6-3&m=dev&t=EwnWsp720oqtiO25-1)
+
+### 📷 Wireframe Preview:
+![AmIResponsive](photo/page1.jpg)
+![AmIResponsive](photo/page2.jpg)
+![AmIResponsive](photo/page3.jpg)
+
+---
+## 📌 Table of Contents
+- [Introduction](#-introduction)
+- [User Experience (UX)](#-user-experience-ux)
+  - [Target Audience](#target-audience)
+  - [User Goals](#user-goals)
+  - [Design](#design)
+  - [Wireframe Figma](#wireframe-figma)
+  - [Color Scheme](#-color-scheme)
+- [Features](#-features)
+  - [Home Page](#-home-page)
+  - [Skills](#-skills)
+  - [Resume](#-resume)
+  - [Contact](#-contact)
+  - [Footer](#-footer)
+- [Future Features](#-future-features)
+- [Technologies Used](#-technologies-used)
+- [Deployment](#-deployment)
+- [Testing](#-testing)
+- [Credits](#-credits)
+- [Acknowledgments](#-acknowledgments)
+
+---
+
+## 🎨 User Experience (UX)
+
+
+
+### 🎯 Target Audience
+- Individual clients and businesses seeking renovation and finishing services.
+- Potential partners or collaborators looking for a trusted construction company.
+- Users who want quick access to the company's services, contact details, and location.
+
+### 🧭 User Goals
+- **First-time visitors:** Quickly understand the scope of services, explore the photo gallery, and find contact information.
+- **Returning visitors:** Reconnect with the company, send inquiries, or check for updates.
+
+### 🖌️ Design
+The design prioritizes a clear presentation of services and intuitive user navigation:
+- **Professional and modern look:** A structured layout that highlights service offerings, customer reviews, and essential contact information.
+- **Simple and intuitive navigation:** A fixed navigation bar with direct links to key sections like "Home", "About", "Gallery", and "Contact".
+- **Responsive layout:** Optimized for seamless use on desktops, tablets, and mobile devices.
+
+### 🎨 Color Scheme
+
+![AmIResponsive](readme/adobe_color.jpg)
+
+The website uses a clean, trustworthy color palette associated with reliability and craftsmanship:
+- **Accent Colors:** Accent Colors: Black&Red with golden tones – conveying elegance, luxury, and trust.
+- **Background:** Soft neutral shades – enhancing readability and maintaining a light, clean aesthetic.
+- **Text & Contrast:** Dark text on light backgrounds – ensuring accessibility and clarity.
+
+This UX approach provides an effective and trustworthy user experience while promoting the MarexLux brand as a reliable service provider.
+
 ## PROJECT2
 Project Objective
 The aim of the project is to create a modern, functional, and visually appealing website for Marex Lux, a company specializing in comprehensive renovation and interior finishing services. The website is intended to:
