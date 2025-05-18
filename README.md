@@ -1,6 +1,6 @@
 # Adrian Szmajewski | Interactive Business Website
 
-![ResponsivePreview](photo/website_project2.jpg)
+![ResponsivePreview](readme/project2.gif)
 
 ## 🎯 Introduction
 
