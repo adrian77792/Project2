@@ -30,12 +30,21 @@ The website represents a modern, responsive business landing page with real-time
 
 ## Wireframe Figma
 
-🔗 **Figma:** [View my Wireframe on Figma](https://www.figma.com/design/9iFyXgR7lZ2mdYJSimZVvS/Untitled?node-id=6-3&m=dev&t=EwnWsp720oqtiO25-1)
+🔗 **Figma:** [View my Wireframe]
 
-### 📷 Wireframe Preview:
-![AmIResponsive](photo/page1.jpg)
-![AmIResponsive](photo/page2.jpg)
-![AmIResponsive](photo/page3.jpg)
+### 📷 Wireframe Desktop Preview:
+![AmIResponsive](readme/page01.png)
+![AmIResponsive](readme/page02.png)
+![AmIResponsive](readme/page03.png)
+![AmIResponsive](readme/page04.png)
+![AmIResponsive](readme/page05.png)
+
+### 📷 Wireframe Mobile Preview:
+![AmIResponsive](readme/page1.png)
+![AmIResponsive](readme/page2.png)
+![AmIResponsive](readme/page3.png)
+![AmIResponsive](readme/page4.png)
+![AmIResponsive](readme/page5.png)
 
 ---
 ## 📌 Table of Contents
