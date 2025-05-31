@@ -34,8 +34,9 @@ The website represents a modern, responsive business landing page with real-time
 - [User Experience (UX)](#-user-experience-ux)
   - [Target Audience](#-target-audience)
   - [User Goals](#-user-goals)
-  - [Design](#-design)
-  - [Wireframe](#-wireframe)
+  - [Design](#️-design)
+  - [Wireframe Desktop](#-wireframe-desktop-preview)
+  - [Wireframe Mobile](#-wireframe-mobile-preview)
   - [Color Scheme](#-color-scheme)
 - [Features](#-features)
   - [Home Page](#-home-page)
@@ -68,8 +69,6 @@ The design prioritizes a clear presentation of services and intuitive user navig
 - **Professional and modern look:** A structured layout that highlights service offerings, customer reviews, and essential contact information.
 - **Simple and intuitive navigation:** A fixed navigation bar with direct links to key sections like "Home", "About", "Gallery", and "Contact".
 - **Responsive layout:** Optimized for seamless use on desktops, tablets, and mobile devices.
-
-### Wireframe
 
 ### 📷 Wireframe Desktop Preview:
 ![AmIResponsive](readme/page01.png)
