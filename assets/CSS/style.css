@@ -5,8 +5,11 @@ body {
     padding: 0;
     background-color: #ffffff; /* Neutral white background */
     color: #333; /* Dark gray text for better readability on white */
-}
-
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 /* Responsive logo/image in header */
 header img {
     max-width: 100%; /* Ensures image doesn't overflow container */
@@ -15,9 +18,9 @@ header img {
 /* Styling for the image carousel */
 .carousel {
     margin: 20px auto;
-    border-radius: 10px; /* Rounded corners for a modern look */
-    background-color: #746e6e; /* Darker background to highlight the carousel */
-    padding: 5px;
+    border-radius: 5px; /* Rounded corners for a modern look */
+    background-color: #FFD700; /* Darker background to highlight the carousel */
+    padding: 1px;
 }
 
 /* Limit carousel width to 35% on large screens */
@@ -65,7 +68,7 @@ header {
     padding: 14px 20px; /* Clickable area padding */
 }
 .navbar a:hover {
-    background-color: #ff0000; /* Visual feedback on hover */
+    background-color: #ffffff; /* Visual feedback on hover */
 }
 
 /* Generic container for layout separation */
@@ -80,7 +83,7 @@ header {
 /* Text content block with max width to avoid overly wide lines */
 .text-content {
     max-width: 45%; 
-    color: #746e6e;
+    color: #ffffff;
 }
 
 
@@ -100,13 +103,13 @@ header {
 
 /* Nav links with bold and white styling */
 .navbar-nav .nav-link {
-    color: rgb(255, 255, 255);
+    color:#FFD700;
     border-radius: 5px;
     font-weight: bold; 
 }
 
 .navbar-nav .nav-link:hover {
-    color: #cccccc; 
+    color: red; 
 }
 
 /* Mobile-specific styles for screens <615px */
@@ -457,8 +460,8 @@ height: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid gray;
-    border-radius: 10px;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
     
 }
 .image-wrapper {
@@ -482,9 +485,9 @@ height: 95%;
     position: absolute;
     top: 0;
     left: 100%;
-    width: 5px;
+    width: 1px;
     height: 100%;
-    background-color: gray;
+    background-color: #FFD700;
     cursor: ew-resize;
     z-index: 2;
 }
@@ -532,17 +535,17 @@ height: 95%;
 
 /* Form label styling for visual hierarchy */
 .form-label {
-    color:rgb(95, 88, 88);;
+    color:rgb(255, 255, 255);;
     font-weight: bold;
 }
 
 /* Heading and paragraph styling */
 h5 {
-    color: grey;
+    color: rgb(255, 255, 255);
 }
 
 p {
-    color:grey;
+    color:rgb(255, 255, 255);
 }
 
 .container-about_us .row {
@@ -555,5 +558,10 @@ p {
 }
 
 .map iframe {
-    border-radius: 10px;
+    border-radius: 5px;
+}
+
+#footer-text {
+    white-space: nowrap;
+    color: #FFD700 !important;
 }
