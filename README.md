@@ -28,24 +28,6 @@ The website represents a modern, responsive business landing page with real-time
 - **Strengthen UI/UX Skills**  
   From smooth navigation to interactive elements, this project helps sharpen design sensibility while improving code organization and responsiveness.
 
-## Wireframe Figma
-
-🔗 **Figma:** [View my Wireframe]
-
-### 📷 Wireframe Desktop Preview:
-![AmIResponsive](readme/page01.png)
-![AmIResponsive](readme/page02.png)
-![AmIResponsive](readme/page03.png)
-![AmIResponsive](readme/page04.png)
-![AmIResponsive](readme/page05.png)
-
-### 📷 Wireframe Mobile Preview:
-![AmIResponsive](readme/page1.png)
-![AmIResponsive](readme/page2.png)
-![AmIResponsive](readme/page3.png)
-![AmIResponsive](readme/page4.png)
-![AmIResponsive](readme/page5.png)
-
 ---
 ## 📌 Table of Contents
 - [Introduction](#-introduction)
@@ -53,7 +35,7 @@ The website represents a modern, responsive business landing page with real-time
   - [Target Audience](#target-audience)
   - [User Goals](#user-goals)
   - [Design](#design)
-  - [Wireframe Figma](#wireframe-figma)
+  - [Wireframe](#wireframe)
   - [Color Scheme](#-color-scheme)
 - [Features](#-features)
   - [Home Page](#-home-page)
@@ -72,8 +54,6 @@ The website represents a modern, responsive business landing page with real-time
 
 ## 🎨 User Experience (UX)
 
-
-
 ### 🎯 Target Audience
 - Individual clients and businesses seeking renovation and finishing services.
 - Potential partners or collaborators looking for a trusted construction company.
@@ -88,6 +68,22 @@ The design prioritizes a clear presentation of services and intuitive user navig
 - **Professional and modern look:** A structured layout that highlights service offerings, customer reviews, and essential contact information.
 - **Simple and intuitive navigation:** A fixed navigation bar with direct links to key sections like "Home", "About", "Gallery", and "Contact".
 - **Responsive layout:** Optimized for seamless use on desktops, tablets, and mobile devices.
+
+## Wireframe
+
+### 📷 Wireframe Desktop Preview:
+![AmIResponsive](readme/page01.png)
+![AmIResponsive](readme/page02.png)
+![AmIResponsive](readme/page03.png)
+![AmIResponsive](readme/page04.png)
+![AmIResponsive](readme/page05.png)
+
+### 📷 Wireframe Mobile Preview:
+![AmIResponsive](readme/page1.png)
+![AmIResponsive](readme/page2.png)
+![AmIResponsive](readme/page3.png)
+![AmIResponsive](readme/page4.png)
+![AmIResponsive](readme/page5.png)
 
 ### 🎨 Color Scheme
 
@@ -158,7 +154,7 @@ Total Price Calculation – Automatically calculates the total cost based on the
 Action Buttons – Options to add services and print the estimate as a PDF.
 
 ### 📐 Construction Calculator
-![AmIResponsive](readme/calculator.jpg)
+![AmIResponsive](readme/construction_calculator.jpg)
 
 The Construction Calculator on the Marexlux website is an interactive tool designed to help users quickly estimate renovation costs with clarity and ease.
 
@@ -230,35 +226,6 @@ Send Button: Submit your message directly to Marexlux.
 Website content © 2025 Marexlux.
 
 This page ensures users can quickly reach out with inquiries or project details, streamlining communication for a prompt response.
-
-
-
-
-
-
-
-## PROJECT2
-Project Objective
-The aim of the project is to create a modern, functional, and visually appealing website for Marex Lux, a company specializing in comprehensive renovation and interior finishing services. The website is intended to:
-
-Clearly present the company’s service offerings,
-
-Showcase the team’s experience and professionalism,
-
-Allow customers to easily get in touch and request service estimates,
-
-Increase the company’s online visibility and attract new clients,
-
-Build trust through a portfolio of completed projects and positive feedback.
-
-The website should be intuitive, responsive (optimized for mobile devices), and compliant with modern web design standards.
-
-## PAGES
-- About_Us.html – about us
-- Calculator.html – simple calculator
-- Contact.html – contact form
-- Services.html – description of services
-- Marek.html – profile
 
 ## How to run?
 
