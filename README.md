@@ -32,19 +32,19 @@ The website represents a modern, responsive business landing page with real-time
 ## 📌 Table of Contents
 - [Introduction](#-introduction)
 - [User Experience (UX)](#-user-experience-ux)
-  - [Target Audience](#target-audience)
-  - [User Goals](#user-goals)
-  - [Design](#design)
-  - [Wireframe](#wireframe)
+  - [Target Audience](#-target-audience)
+  - [User Goals](#-user-goals)
+  - [Design](#-design)
+  - [Wireframe](#-wireframe)
   - [Color Scheme](#-color-scheme)
 - [Features](#-features)
   - [Home Page](#-home-page)
-  - [Skills](#-skills)
-  - [Resume](#-resume)
+  - [Services](#️-services)
+  - [Construction Calculator](#-construction-calculator)
+  - [About Us](#-about-us)
   - [Contact](#-contact)
-  - [Footer](#-footer)
-- [Future Features](#-future-features)
-- [Technologies Used](#-technologies-used)
+- [Planned Features](#-planned-features)
+- [Technologies Used](#️-technologies-used)
 - [Deployment](#-deployment)
 - [Testing](#-testing)
 - [Credits](#-credits)
@@ -69,7 +69,7 @@ The design prioritizes a clear presentation of services and intuitive user navig
 - **Simple and intuitive navigation:** A fixed navigation bar with direct links to key sections like "Home", "About", "Gallery", and "Contact".
 - **Responsive layout:** Optimized for seamless use on desktops, tablets, and mobile devices.
 
-## Wireframe
+### Wireframe
 
 ### 📷 Wireframe Desktop Preview:
 ![AmIResponsive](readme/page01.png)
@@ -227,6 +227,47 @@ Website content © 2025 Marexlux.
 
 This page ensures users can quickly reach out with inquiries or project details, streamlining communication for a prompt response.
 
+## 🚧 Planned Features
+
+> This project is under active development. The following features are planned for future updates to enhance functionality, improve user experience, and expand the business use case. Community feedback and contributions are welcome!
+
+- 🛒 **E-commerce module (cart + orders)**  
+  Add a shopping cart and order system for showcasing and selling products or services.
+
+- 🌐 **Multilingual support (PL/EN)**  
+  Enable users to switch between Polish and English versions of the site.
+
+- 🔍 **Search functionality**  
+  Implement a site-wide search bar to help users find content quickly.
+
+- 📅 **Online booking/reservations**  
+  Allow visitors to book appointments or services through a calendar interface.
+
+- 💬 **Live chat support**  
+  Integrate real-time messaging to improve customer support and engagement.
+
+- 📈 **Visitor analytics**  
+  Track site traffic and user behavior using tools like Google Analytics or Matomo.
+
+- 🌙 **Dark mode switch**  
+  Give users the option to switch between light and dark themes.
+
+- 🧪 **Unit & end-to-end testing**  
+  Introduce testing to ensure code reliability and prevent bugs in production.
+
+- 📄 **Headless CMS integration**  
+  Connect a content management system (e.g., Strapi, Netlify CMS) for easy content updates.
+
+## 🛠️ Technologies Used
+
+- **HTML5** – Markup structure
+- **CSS3** – Styling
+- **JavaScript** – Interactivity
+- **Bootstrap 5** – Responsive layout and components
+- **Google Maps API** – Embedding dynamic maps
+- **EmailJS** – Sending form data to email
+
+
 ## How to run?
 
 1. Download the repository:
@@ -234,9 +275,5 @@ git clone https://github.com/adrian77792/Project2
 
 2. Open the HTML file in your browser.
 
-## Technologies
 
-- HTML
-- CSS
-- JavaScript
 
