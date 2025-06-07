@@ -45,15 +45,11 @@ header {
     text-align: center;
 }
 
-/* Navbar configuration */
+/* Navbar container */
 .navbar {
+    width: 100%;
     padding: 0;
     margin: 0;
-    width: 100% !important; /* Force full width */
-}
-    
-/* Navbar configuration */
-.navbar {
     background-color: #333;
     overflow: hidden;
     display: flex;
@@ -61,14 +57,29 @@ header {
     align-items: center;
 }
 
-/* Navbar links */
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px; /* Clickable area padding */
+/* Nav item reset (li) */
+.navbar-nav .nav-item {
+    margin: 0 !important;
+    padding: 0 !important;
 }
-.navbar a:hover {
-    background-color: #ffffff; /* Visual feedback on hover */
+
+/* Nav links */
+.navbar-nav .nav-link {
+    display: inline-block; /* Tylko tyle, ile potrzeba */
+    padding: 0.5rem 0.75rem; /* Lekki padding dla wyglądu */
+    margin: 0;
+    color: white !important;
+    background-color: transparent !important;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
 }
 
 /* Generic container for layout separation */
@@ -535,7 +546,7 @@ height: 95%;
 
 /* Form label styling for visual hierarchy */
 .form-label {
-    color:rgb(255, 255, 255);;
+    color:rgb(255, 255, 255);
     font-weight: bold;
 }
 
@@ -564,4 +575,21 @@ p {
 #footer-text {
     white-space: nowrap;
     color: #FFD700 !important;
+}
+
+/* Apply dark background and gold styling to all contact form fields */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    background-color: #222 !important;      /* Dark background */
+    color: #FFD700 !important;              /* Gold text */
+    border: 1px solid #FFD700 !important;   /* Gold border */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Optional: style placeholders */
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: #aaa !important;
 }
