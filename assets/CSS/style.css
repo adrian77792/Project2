@@ -593,3 +593,58 @@ p {
 #contact-form textarea::placeholder {
     color: #aaa !important;
 }
+
+/* Entire table cells have white background */
+#servicesTable td {
+    background-color: white;
+    color: black;
+}
+
+/* Select and input in the first and second columns have gold background and black text */
+#servicesTable tr td:nth-child(1) select,
+#servicesTable tr td:nth-child(2) input[type="number"] {
+    background-color: gold;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+/* Highlight select and input with gold glow on focus */
+#servicesTable tr td:nth-child(1) select:focus,
+#servicesTable tr td:nth-child(2) input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px gold;
+    border-color: gold;
+}
+
+/* Target your specific table by class or more specific selector */
+table.table-bordered {
+    border-collapse: separate !important;  /* override Bootstrap's collapse */
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;   /* clip overflow */
+    border: 3px solid gold;
+}
+
+/* Rounded corners on table header cells */
+table.table-bordered thead tr th:first-child {
+    border-top-left-radius: 12px;
+}
+
+table.table-bordered thead tr th:last-child {
+    border-top-right-radius: 12px;
+}
+
+/* Rounded corners on last row's first and last cells */
+table.table-bordered tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+table.table-bordered tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+
+
+
+
