@@ -68,7 +68,7 @@ header {
     display: inline-block; /* Tylko tyle, ile potrzeba */
     padding: 0.5rem 0.75rem; /* Lekki padding dla wyglądu */
     margin: 0;
-    color: white !important;
+    color: #FFD700 !important;
     background-color: transparent !important;
     font-weight: bold;
     text-decoration: none;
