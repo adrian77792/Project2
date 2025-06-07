@@ -414,7 +414,7 @@ height: 95%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shine 20s infinite linear; /* Animacja przesuwa się wolniej */
+    animation: shine 20s infinite linear;
 }
 
 /* Invisible link style used for click effects or accessibility */
