@@ -654,6 +654,21 @@ table.table-bordered tbody tr:last-child td:last-child {
     border-bottom-right-radius: 12px;
 }
 
+.logo-3d {
+    animation: spinY 7s linear infinite;
+    transform-style: preserve-3d;
+    display: inline-block;
+  }
+  
+  @keyframes spinY {
+    from {
+      transform: perspective(500px) rotateY(0deg);
+    }
+    to {
+      transform: perspective(500px) rotateY(360deg);
+    }
+  }
+
 
 
 
