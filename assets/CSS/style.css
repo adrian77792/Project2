@@ -406,10 +406,21 @@ height: 95%;
     animation: shine 20s infinite linear; /* Animacja przesuwa się wolniej */
 }
 
+/* Text with animated shine effect in red theme */
+.shiny-text-gold {
+    position: relative;
+    background: linear-gradient(45deg, #ffffff , #FFD700, transparent);
+    background-size: 100px 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 20s infinite linear; /* Animacja przesuwa się wolniej */
+}
+
 /* Text with animated shine effect in black theme */
 .shiny-text-black {
     position: relative;
-    background: linear-gradient(45deg, #FFD700, rgba(0,0,0,1), transparent);
+    background: linear-gradient(45deg, #000000, #FFD700, transparent);
     background-size: 100px 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -440,7 +451,6 @@ height: 95%;
 
     .contact {
         order: 2; 
-        width: 50%;
     }
     
 }
@@ -458,7 +468,6 @@ height: 95%;
 
 .contact {
     order: 1; 
-    width: 50%;
 }
 
 /* Image comparison slider container */

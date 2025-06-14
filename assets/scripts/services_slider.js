@@ -56,7 +56,13 @@ function startAutoMove() {
         if (!isUserInteracting) {
             let currentPos = parseFloat(slider.style.left) || 0;
             let newPos = currentPos + 0.1;
-            if (newPos > 99) newPos = 0; 
+            if (newPos > 99)
+               {
+                const nextBtn = document.getElementById("nextBtn");
+                nextBtn.click();
+                
+                newPos = 0;
+            } 
             before.style.clipPath = `inset(0 ${100 - newPos}% 0 0)`;
             slider.style.left = newPos + '%';
         }
