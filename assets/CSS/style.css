@@ -68,7 +68,7 @@ header {
     display: inline-block; /* Tylko tyle, ile potrzeba */
     padding: 0.5rem 0.75rem; /* Lekki padding dla wyglądu */
     margin: 0;
-    color: #FFD700 !important;
+    color: #ffffff !important;
     background-color: transparent !important;
     font-weight: bold;
     text-decoration: none;
@@ -583,7 +583,7 @@ p {
 
 #footer-text {
     white-space: nowrap;
-    color: #FFD700 !important;
+    color: #ffffff !important;
 }
 
 /* Apply dark background and gold styling to all contact form fields */
