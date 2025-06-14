@@ -310,7 +310,7 @@ header {
     color: rgb(0, 0, 0);
     border-radius: 20px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: bold;
   }
 
   /* Smooth scrolling animation for tags */
