@@ -65,8 +65,8 @@ header {
 
 /* Nav links */
 .navbar-nav .nav-link {
-    display: inline-block; /* Tylko tyle, ile potrzeba */
-    padding: 0.5rem 0.75rem; /* Lekki padding dla wyglądu */
+    display: inline-block; 
+    padding: 0.5rem 0.75rem;
     margin: 0;
     color: #ffffff !important;
     background-color: transparent !important;
@@ -127,6 +127,9 @@ header {
 @media (max-width: 615px) {
     .navbar-text {
         display: none; /* Hide less critical text on small screens */
+    }
+    .marquee{
+        display: none;
     }
     .w-60 {
         width: 100%;
