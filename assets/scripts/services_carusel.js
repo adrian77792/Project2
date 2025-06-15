@@ -37,8 +37,6 @@ function updateContent() {
     // Hide all comparison tables
     document.querySelectorAll(".comparison-table").forEach(table => table.style.display = "none");
 
-    // Display the current table based on its ID
-    document.getElementById(images[currentIndex].table).style.display = "table";
 }
 
 // Event listener for the "Previous" button
