@@ -55,6 +55,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #ffc107;
 }
 
 /* Nav item reset (li) */
@@ -385,11 +386,12 @@ height: 95%;
     flex-direction: column; 
     justify-content: center; 
     height: 50px; 
+    border-top: 1px solid #ffc107;
 }
 
 /* Spacer to offset fixed header */
 .header-placeholder {
-    height: 50px;
+    height: 65px;
 }
 
 /* Shine text animation keyframes */
@@ -673,7 +675,7 @@ table.table-bordered tbody tr:last-child td:last-child {
   }
 
 .marquee {
-    width: 300px; /* lub 100%, zależnie od potrzeb */
+    width: 100%; /* lub 100%, zależnie od potrzeb */
     overflow: hidden;
     position: relative;
     height: 50px; /* wysokość jak logo dla estetyki */
@@ -684,13 +686,30 @@ table.table-bordered tbody tr:last-child td:last-child {
     padding-left: 100%;
     white-space: nowrap;
     color: #FFD700;
-    animation: moveText 10s linear infinite;
+    animation: moveText 25s linear infinite;
     line-height: 50px; /* wyrównanie tekstu w pionie do logo */
+    position: absolute;
+    right: 50%;
 }
 
-@keyframes moveText {
+/*@keyframes moveText {
     0%   { transform: translateX(0); }
     100% { transform: translateX(-100%); }
+}*/
+
+@keyframes moveText {
+    0% {
+        right: -35%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
 }
 
 
