@@ -210,7 +210,7 @@ header {
     .responsive-table tbody, 
     .responsive-table tr, 
     .responsive-table td {
-    display: block;
+    /*display: block;*/
     width: 100%;
     }
 
@@ -341,12 +341,6 @@ img {
 .baner{
     padding-top: 3%;
     padding-bottom: 1.5%;
-}
-
-/* Contact form dimensions */
-#contact-form {
-width:40%;
-height: 95%;
 }
 
 /* Text color utility classes */
@@ -592,6 +586,15 @@ p {
 }
 
 /* Apply dark background and gold styling to all contact form fields */
+#contact-form {
+    border: 2px solid #FFD700;
+    border-radius: 10px !important;
+    width:40%;
+    height: 95%;
+    
+  
+}
+
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form textarea {
@@ -711,6 +714,36 @@ table.table-bordered tbody tr:last-child td:last-child {
     flex-grow: 0;
     align-items: center;
 }
+@media (min-width: 500px) and (max-width: 790px) {
+    #servicesTable {
+        width: 100%;
+        table-layout: fixed; 
+
+    #servicesTable thead tr th,
+    #servicesTable tbody tr td {
+        width: 20%; 
+        box-sizing: border-box;
+    }
+}
+}     
+
+@keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slide-in {
+    animation-name: slideInRight;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    opacity: 0;
+  }
 
 
 
