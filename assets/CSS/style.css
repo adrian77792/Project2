@@ -210,12 +210,13 @@ header {
     .responsive-table tbody, 
     .responsive-table tr, 
     .responsive-table td {
-    /*display: block;*/
-    width: 100%;
+    display: block;
+    
     }
 
     .responsive-table tr {
-    /*margin-bottom: 1rem;*/
+    display: block;
+    /*width: 100%;*/
     border: 1px solid #ccc;
     padding: 0.5rem;
     border-radius: 8px;
@@ -678,10 +679,10 @@ table.table-bordered tbody tr:last-child td:last-child {
   }
 
 .marquee {
-    width: 100%; /* lub 100%, zależnie od potrzeb */
+    width: 100%; 
     overflow: hidden;
     position: relative;
-    height: 50px; /* wysokość jak logo dla estetyki */
+    height: 50px; 
 }
 
 .marquee span {
@@ -690,7 +691,7 @@ table.table-bordered tbody tr:last-child td:last-child {
     white-space: nowrap;
     color: #FFD700;
     animation: moveText 25s linear infinite;
-    line-height: 50px; /* wyrównanie tekstu w pionie do logo */
+    line-height: 50px; 
     position: absolute;
     right: 50%;
 }
