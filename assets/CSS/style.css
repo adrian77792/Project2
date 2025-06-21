@@ -725,7 +725,7 @@ table.table-bordered tbody tr:last-child td:last-child {
     flex-grow: 0;
     align-items: center;
 }
-@media (min-width: 500px) and (max-width: 790px) {
+/*@media (min-width: 500px) and (max-width: 790px) {
     #servicesTable {
         width: 100%;
         table-layout: fixed; 
@@ -736,7 +736,7 @@ table.table-bordered tbody tr:last-child td:last-child {
         box-sizing: border-box;
     }
 }
-}     
+} */    
 
 @keyframes slideInRight {
     0% {
@@ -756,6 +756,17 @@ table.table-bordered tbody tr:last-child td:last-child {
     opacity: 0;
   }
 
+.asi1 {
+    animation-delay: 0s;
+  }
+
+.asi2 {
+    animation-delay: 1s
+  }
+  
+.asi3 {
+    animation-delay: 2s;
+  }
 
 
 
