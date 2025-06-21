@@ -214,6 +214,16 @@ header {
     
     }
 
+    .table-header {
+    display: flex !important;
+    justify-content: center;
+    width: 150%;
+    }
+
+    .tabele-head {
+    display: flex !important;
+
+    }
     .responsive-table tr {
     display: block;
     /*width: 100%;*/
