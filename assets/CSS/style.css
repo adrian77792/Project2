@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif; /* Clean, widely supported sans-serif font */
     margin: 0; /* Remove default browser spacing */
     padding: 0;
-    background-color: #ffffff; /* Neutral white background */
+    background-color: #3c2803; /* Neutral white background */
     color: #333; /* Dark gray text for better readability on white */
     background-image: url('background.jpg');
     background-size: cover;
