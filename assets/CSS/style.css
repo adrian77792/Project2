@@ -768,5 +768,37 @@ table.table-bordered tbody tr:last-child td:last-child {
     animation-delay: 2s;
   }
 
+  @keyframes slideInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(300px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slide-in-bottom {
+    animation-name: slideInBottom;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    opacity: 0;
+  }
+
+  .asia {
+    animation-delay: 2s;
+  }
+
+.asib {
+    animation-delay: 3s
+  }
+  
+.asic {
+    animation-delay: 4s;
+  }
+
+
 
 
