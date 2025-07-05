@@ -284,6 +284,13 @@ header {
     .container-services {
         min-width: 80% !important;
     }
+
+    .animate-slide-in {
+        animation-name: slideInBottom;
+        animation-duration: 0.8s;
+        animation-fill-mode: both;
+        opacity: 0;
+      }
 }
 
 #mobile-baner {
@@ -383,7 +390,7 @@ img {
 #footer {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vu;
     height: 7.5vh; 
     overflow: hidden;
     z-index: 1000;
