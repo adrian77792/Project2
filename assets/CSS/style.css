@@ -286,7 +286,7 @@ header {
     }
 
     .animate-slide-in {
-        animation-name: slideInBottom;
+        animation-name: slideInBottom !important;
         animation-duration: 0.8s;
         animation-fill-mode: both;
         opacity: 0;
