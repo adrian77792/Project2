@@ -431,14 +431,14 @@ Now you're all set! 🚀
 - **Navigation usability:** Ensured smooth and intuitive browsing.
 - **Form validation:** Checked for proper input handling.
 
-![AmIResponsive](readme/error1.jpg.jpg)
-![AmIResponsive](readme/error2.jpg.jpg)
-![AmIResponsive](readme/error3.jpg.jpg)
-![AmIResponsive](readme/error4.jpg.jpg)
-![AmIResponsive](readme/error5.jpg.jpg)
-![AmIResponsive](readme/error6.jpg.jpg)
-![AmIResponsive](readme/error7.jpg.jpg)
-![AmIResponsive](readme/error8.jpg.jpg)
+![AmIResponsive](readme/error1.jpg)
+![AmIResponsive](readme/error2.jpg)
+![AmIResponsive](readme/error3.jpg)
+![AmIResponsive](readme/error4.jpg)
+![AmIResponsive](readme/error5.jpg)
+![AmIResponsive](readme/error6.jpg)
+![AmIResponsive](readme/error7.jpg)
+![AmIResponsive](readme/error8.jpg)
 ---
 ## 📚 Credits
 
