@@ -96,6 +96,8 @@ header {
 .text-content {
     max-width: 45%; 
     color: #ffffff;
+    overflow: hidden;
+
 }
 
 
@@ -684,6 +686,7 @@ table.table-bordered tbody tr:last-child td:last-child {
     animation: spinY 7s linear infinite;
     transform-style: preserve-3d;
     display: inline-block;
+    height: 60px;
   }
   
   @keyframes spinY {
