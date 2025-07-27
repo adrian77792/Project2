@@ -67,7 +67,7 @@ The website represents a modern, responsive business landing page with real-time
 ### 🖌️ Design
 The design prioritizes a clear presentation of services and intuitive user navigation:
 - **Professional and modern look:** A structured layout that highlights service offerings, customer reviews, and essential contact information.
-- **Simple and intuitive navigation:** A fixed navigation bar with direct links to key sections like "Home", "About", "Gallery", and "Contact".
+- **Simple and intuitive navigation:** A fixed navigation bar with direct links to key sections like "Welcome", "About", "Gallery", and "Contact".
 - **Responsive layout:** Optimized for seamless use on desktops, tablets, and mobile devices.
 
 ### 📷 Wireframe Desktop Preview:
@@ -89,7 +89,7 @@ The design prioritizes a clear presentation of services and intuitive user navig
 ![AmIResponsive](readme/adobe_color.jpg)
 
 The website uses a clean, trustworthy color palette associated with reliability and craftsmanship:
-- **Accent Colors:** Accent Colors: Black&Red with golden tones – conveying elegance, luxury, and trust.
+- **Accent Colors:** Accent Colors: Black and white with golden tones – conveying elegance, luxury, and trust.
 - **Background:** Soft neutral shades – enhancing readability and maintaining a light, clean aesthetic.
 - **Text & Contrast:** Dark text on light backgrounds – ensuring accessibility and clarity.
 
@@ -99,11 +99,11 @@ This UX approach provides an effective and trustworthy user experience while pro
 ## 🔥 Features
 
 ### 🏠 Home Page
-![AmIResponsive](readme/home.jpg)
+![AmIResponsive](readme/welcome.jpg)
 
 This page showcases the services of MarexLux, a company specializing in interior renovation and finishing. The layout is designed for easy navigation and information access.
 
-*   **Header:** Located at the top of the page, the header contains the company logo ("MarexLux"), main navigation links (Home, Services, Calculator, About Us, Contact), providing quick access to key sections.
+*   **Header:** Located at the top of the page, the header contains the company logo ("MarexLux"), main navigation links (Welcome, Services, Calculator, About Us, Contact), providing quick access to key sections.
 
 *   **Service Navigation:** Below the header, there's a navigation bar with categories of services offered. Examples include "Apartment renovations," "Home remodeling," "Construction services," "Design and arrangement," "Furniture assembly," "Painting and wallpapering," and "Tiles and ceramics." These act as links or buttons to explore specific service areas.
 
@@ -328,7 +328,7 @@ Now you're all set! 🚀
   - Safari (macOS/iOS)
 - **Devices**: 
   - Windows 11 Desktop (1920x1080)
-  - Android Smartphone (Pixel 5, Samsung Galaxy S10)
+  - Android Smartphone (Pixel 5, Samsung Galaxy S10, Samsung A54)
   - iPhone 13
   - iPad Mini
 - **Validators**:
@@ -431,16 +431,14 @@ Now you're all set! 🚀
 - **Navigation usability:** Ensured smooth and intuitive browsing.
 - **Form validation:** Checked for proper input handling.
 
-![AmIResponsive](photo/Error.jpg)
-![AmIResponsive](photo/Error2.jpg)
-![AmIResponsive](photo/Error3.jpg)
-![AmIResponsive](photo/fix1.jpg)
-![AmIResponsive](photo/fix2.jpg)
-![AmIResponsive](photo/fix3.jpg)
-![AmIResponsive](photo/Local_metrics.jpg)
-![AmIResponsive](photo/Performance.jpg)
-![AmIResponsive](photo/Performance2.jpg)
-
+![AmIResponsive](readme/error1.jpg.jpg)
+![AmIResponsive](readme/error2.jpg.jpg)
+![AmIResponsive](readme/error3.jpg.jpg)
+![AmIResponsive](readme/error4.jpg.jpg)
+![AmIResponsive](readme/error5.jpg.jpg)
+![AmIResponsive](readme/error6.jpg.jpg)
+![AmIResponsive](readme/error7.jpg.jpg)
+![AmIResponsive](readme/error8.jpg.jpg)
 ---
 ## 📚 Credits
 
